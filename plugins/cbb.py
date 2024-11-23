@@ -10,13 +10,13 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Creator : <a href='tg://settings'>This Person</a>\n○ Channel : @DelightRedirect</b>",
+            text = f"<b>○ Creator : <a href='tg://settings'>This Person</a>\n○ Channel : @DelightNetwork</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
                     InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close"),
-                    InlineKeyboardButton('🍁 Updates', url='https://t.me/DelightRedirect')
+                    InlineKeyboardButton('🍁 Updates', url='https://t.me/DelightNetwork')
                     ]
                 ]
             )
